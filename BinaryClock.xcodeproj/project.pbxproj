@@ -18,6 +18,11 @@
 		9F6CA2CE24412698003D6A27 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CA2CD24412698003D6A27 /* NotificationView.swift */; };
 		9F6CA2D024412699003D6A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6CA2CF24412699003D6A27 /* Assets.xcassets */; };
 		9F6CA2D324412699003D6A27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6CA2D224412699003D6A27 /* Preview Assets.xcassets */; };
+		9F6CA2E424412998003D6A27 /* BinaryDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CA2E324412998003D6A27 /* BinaryDigit.swift */; };
+		9F6CA2E62441B2DC003D6A27 /* ClockColon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CA2E52441B2DC003D6A27 /* ClockColon.swift */; };
+		9F6CA2E824424049003D6A27 /* BinaryDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CA2E724424049003D6A27 /* BinaryDate.swift */; };
+		9F6CA2EA24424093003D6A27 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CA2E924424093003D6A27 /* WeekdayView.swift */; };
+		9F6CA2F02442626B003D6A27 /* bitHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CA2EF2442626B003D6A27 /* bitHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		9F6CA2D224412699003D6A27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F6CA2D424412699003D6A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F6CA2D524412699003D6A27 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9F6CA2E324412998003D6A27 /* BinaryDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDigit.swift; sourceTree = "<group>"; };
+		9F6CA2E52441B2DC003D6A27 /* ClockColon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockColon.swift; sourceTree = "<group>"; };
+		9F6CA2E724424049003D6A27 /* BinaryDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDate.swift; sourceTree = "<group>"; };
+		9F6CA2E924424093003D6A27 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		9F6CA2EF2442626B003D6A27 /* bitHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				9F6CA2C524412698003D6A27 /* ContentView.swift */,
+				9F6CA2E324412998003D6A27 /* BinaryDigit.swift */,
+				9F6CA2E724424049003D6A27 /* BinaryDate.swift */,
+				9F6CA2E924424093003D6A27 /* WeekdayView.swift */,
+				9F6CA2E52441B2DC003D6A27 /* ClockColon.swift */,
+				9F6CA2EF2442626B003D6A27 /* bitHandler.swift */,
 				9F6CA2C724412698003D6A27 /* HostingController.swift */,
 				9F6CA2C924412698003D6A27 /* ExtensionDelegate.swift */,
 				9F6CA2CB24412698003D6A27 /* NotificationController.swift */,
@@ -272,10 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6CA2F02442626B003D6A27 /* bitHandler.swift in Sources */,
 				9F6CA2C824412698003D6A27 /* HostingController.swift in Sources */,
 				9F6CA2C624412698003D6A27 /* ContentView.swift in Sources */,
+				9F6CA2E424412998003D6A27 /* BinaryDigit.swift in Sources */,
 				9F6CA2CC24412698003D6A27 /* NotificationController.swift in Sources */,
 				9F6CA2CA24412698003D6A27 /* ExtensionDelegate.swift in Sources */,
+				9F6CA2E62441B2DC003D6A27 /* ClockColon.swift in Sources */,
+				9F6CA2EA24424093003D6A27 /* WeekdayView.swift in Sources */,
+				9F6CA2E824424049003D6A27 /* BinaryDate.swift in Sources */,
 				9F6CA2CE24412698003D6A27 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
