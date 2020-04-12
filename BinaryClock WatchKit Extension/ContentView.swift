@@ -30,6 +30,7 @@ struct ContentView: View {
     @State private var backColor = Color(hue: 0,saturation: 0,brightness: 200/255)
     @State private var currentDate = Date()
     @State private var currentTime = CurrentTime()
+    @State private var showDate: Bool = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -54,8 +55,10 @@ struct ContentView: View {
             //Rectangle().foregroundColor(backColor).edgesIgnoringSafeArea(.all)
             Rectangle().foregroundColor(backColor).cornerRadius(10, antialiased: true)
             VStack {
-                BinaryDate(month: $currentTime.month, day: $currentTime.day).padding()
-                Spacer()
+                if showDate {
+                    BinaryDate(month: $currentTime.month, day: $currentTime.day).padding()
+                    Spacer()
+                }
                 HStack {
                     BinaryDigit(value: $currentTime.hour)
                     //ClockColon()
@@ -63,11 +66,16 @@ struct ContentView: View {
                     //ClockColon()
                     BinaryDigit(value: $currentTime.second)
                 }.frame(width: 150, height: 100, alignment: .center)
-                Spacer()
-                WeekdayView(weekday: $currentTime.weekday).padding()
+                if showDate {
+                    Spacer()
+                    WeekdayView(weekday: $currentTime.weekday).padding()
+                }
                 //Text("\(currentTime.month)/\(currentTime.day)")
                 //Text("\(currentTime.weekday)")
+            }.onTapGesture(count: 3){
+                self.showDate.toggle()
             }
+
         }.onReceive(timer, perform: {input in self.update(date: input)})
     }
 }
