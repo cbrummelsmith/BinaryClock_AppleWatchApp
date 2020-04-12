@@ -19,6 +19,6 @@ func getBitColor(isOn: Bool) -> Color {
 }
 
 func getBitShadow(isOn: Bool) -> Color {
-    return isOn ? Color.white : Color.black
+    return isOn ? Color.blue : Color(hue: 0, saturation: 0, brightness: 0.5 , opacity: 1)
 }
     

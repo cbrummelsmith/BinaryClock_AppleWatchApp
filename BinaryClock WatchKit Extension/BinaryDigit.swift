@@ -24,7 +24,7 @@ struct BinaryDigit: View {
                 bit in Circle()
                     .foregroundColor(
                         getBitColor(isOn: isBitOn(number:self.value,numBits:self.numComponentenBits, bitPlace:bit)))
-                .shadow(color: .blue, radius: 4, x: 0, y: 0)
+                    .shadow(color: getBitShadow(isOn: isBitOn(number:self.value,numBits:self.numComponentenBits, bitPlace:bit)), radius: 4, x: 0, y: 0)
             }
             //Text("\(self.value)")
         }
